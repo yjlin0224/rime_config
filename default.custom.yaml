@@ -1,0 +1,345 @@
+patch:
+  schema_list:
+    - schema: rime_ice_tw
+    - schema: rime_ice
+    - schema: bopomofo
+    - schema: luna_pinyin
+  menu/page_size: 10
+  switcher/+:
+    caption: ［RIME選單］
+    hotkeys:
+      - Control+grave
+      - Control+Shift+grave
+    save_options:
+      - full_shape
+      - ascii_punct
+      - simplification
+      - extended_charset
+      - zh_hant
+      - zh_hans
+      - zh_hant_tw
+      # Rime ICE
+      - emoji
+      - traditionalization
+      - search_single_char
+    fold_options: true
+    abbreviate_options: true
+    option_list_separator: "／"
+  ascii_composer/switch_key/+:
+    Caps_Lock: commit_code
+    Shift_L: inline_ascii
+  punctuator/+:
+    full_shape:
+      " ": "　"
+      ",":
+        - "，"
+        - ","
+      ".":
+        - "。"
+        - "．"
+        - "・"
+        - "."
+        - "…"
+        - "·"
+      "<":
+        - "《"
+        - "〈"
+        - "<"
+        - "«"
+        - "‹"
+      ">":
+        - "》"
+        - "〉"
+        - ">"
+        - "»"
+        - "›"
+      "/":
+        - "、"
+        - "／"
+        - "/"
+        - "÷"
+      "?":
+        - "？"
+        - "?"
+        - "¿"
+      ";":
+        - "；"
+        - ";"
+      ":":
+        - "："
+        - ":"
+      "'":
+        - "‘"
+        - "’"
+        - "'"
+      '"':
+        - "“"
+        - "”"
+        - '"'
+      "|":
+        - "｜"
+        - "|"
+        - "§"
+        - "¦"
+      "\\":
+        - "＼"
+        - "\\"
+      "`":
+        - "｀"
+        - "`"
+      "~":
+        - "～"
+        - "〜"
+        - "~"
+        - "〰"
+      "!":
+        - "！"
+        - "!"
+      "@":
+        - "＠"
+        - "@"
+      "#":
+        - "＃"
+        - "#"
+      "%":
+        - "％"
+        - "%"
+        - "‰"
+        - "‱"
+        - "°"
+        - "℃"
+        - "℉"
+      "$":
+        - "＄"
+        - "￥"
+        - "$"
+        - "€"
+        - "£"
+        - "¥"
+        - "¢"
+        - "¤"
+      "^":
+        - "＾"
+        - "^"
+      "&":
+        - "＆"
+        - "&"
+      "*":
+        - "＊"
+        - "*"
+        - "×"
+        - "※"
+      "(":
+        - "（"
+        - "("
+      ")":
+        - "）"
+        - ")"
+      "-":
+        - "－"
+        - "-"
+        - "–"
+        - "—"
+      "_":
+        - "＿"
+        - "_"
+      "+":
+        - "＋"
+        - "+"
+      "=":
+        - "＝"
+        - "="
+        - "≠"
+        - "≈"
+        - "≒"
+      "[":
+        - "「"
+        - "【"
+        - "［"
+        - "〔"
+        - "["
+      "]":
+        - "」"
+        - "】"
+        - "］"
+        - "〕"
+        - "]"
+      "{":
+        - "『"
+        - "〖"
+        - "｛"
+        - "{"
+      "}":
+        - "』"
+        - "〗"
+        - "｝"
+        - "}"
+    half_shape:
+      ",":
+        - "，"
+        - ","
+      ".":
+        - "。"
+        - "."
+        - "…"
+        - "·"
+        - "．"
+        - "・"
+      "<":
+        - "《"
+        - "〈"
+        - "<"
+        - "«"
+        - "‹"
+      ">":
+        - "》"
+        - "〉"
+        - ">"
+        - "»"
+        - "›"
+      "/":
+        - "、"
+        - "／"
+        - "/"
+        - "÷"
+      "?":
+        - "？"
+        - "?"
+        - "¿"
+      ";":
+        - "；"
+        - ";"
+      ":":
+        - "："
+        - ":"
+      "'":
+        - "‘"
+        - "’"
+        - "'"
+      '"':
+        - "“"
+        - "”"
+        - '"'
+      "|":
+        - "|"
+        - "｜"
+        - "§"
+        - "¦"
+      "\\":
+        - "\\"
+        - "＼"
+      "`":
+        - "`"
+        - "｀"
+      "~":
+        - "～"
+        - "~"
+        - "〜"
+        - "〰"
+      "!":
+        - "！"
+        - "!"
+      "@":
+        - "@"
+        - "＠"
+      "#":
+        - "#"
+        - "＃"
+      "%":
+        - "%"
+        - "‰"
+        - "‱"
+        - "％"
+        - "°"
+        - "℃"
+        - "℉"
+      "$":
+        - "$"
+        - "€"
+        - "£"
+        - "¥"
+        - "¢"
+        - "¤"
+        - "＄"
+        - "￥"
+      "^":
+        - "^"
+        - "＾"
+      "&":
+        - "＆"
+        - "&"
+      "*":
+        - "*"
+        - "×"
+        - "＊"
+        - "※"
+      "(":
+        - "（"
+        - "("
+      ")":
+        - "）"
+        - ")"
+      "-":
+        - "-"
+        - "–"
+        - "—"
+        - "－"
+      "_":
+        - "_"
+        - "＿"
+      "+":
+        - "+"
+        - "＋"
+      "=":
+        - "="
+        - "＝"
+        - "≠"
+        - "≈"
+        - "≒"
+      "[":
+        - "「"
+        - "【"
+        - "［"
+        - "〔"
+        - "["
+      "]":
+        - "」"
+        - "】"
+        - "］"
+        - "〕"
+        - "]"
+      "{":
+        - "『"
+        - "〖"
+        - "｛"
+        - "{"
+      "}":
+        - "』"
+        - "〗"
+        - "｝"
+        - "}"
+  key_binder/+:
+    select_first_character: ""
+    select_last_character: ""
+    bindings/+:
+      - when: always
+        accept: Shift+space
+        toggle: full_shape
+      - when: has_menu
+        accept: minus
+        send: minus
+      - when: has_menu
+        accept: equal
+        send: equal
+      - when: always
+        accept: Control+Shift+3
+        send: Control+Shift+3
+      - when: always
+        accept: Control+Shift+numbersign
+        send: Control+Shift+numbersign
+      - when: always
+        accept: Control+Shift+4
+        send: Control+Shift+4
+      - when: always
+        accept: Control+Shift+dollar
+        send: Control+Shift+dollar

@@ -1,0 +1,52 @@
+__include: rime_ice.schema:/
+
+schema:
+  schema_id: rime_ice_tw
+  name: 雾凇拼音（臺灣）
+switches:
+  - name: ascii_mode
+    states:
+      - 中文
+      - 西文
+    abbrev:
+      - 中
+      - Ａ
+    reset: 0
+  - name: ascii_punct
+    states:
+      - 中文標點
+      - 西文標點
+    abbrev:
+      - "，"
+      - ","
+    reset: 0
+  - name: full_shape
+    states:
+      - 半形
+      - 全形
+    abbrev:
+      - 半
+      - 全
+    reset: 0
+  - name: traditionalization
+    reset: 1
+  - name: search_single_char
+    states:
+      - 詞優先
+      - 字優先
+    abbrev:
+      - 詞
+      - 字
+    reset: 0
+  - name: emoji
+    states:
+      - 禁用顏文字
+      - 啟用顏文字
+    abbrev:
+      - ⛔
+      - 😀
+    reset: 1
+
+__patch:
+  - translator/dictionary: rime_ice_tw
+  - traditionalize/opencc_config: s2tw.json

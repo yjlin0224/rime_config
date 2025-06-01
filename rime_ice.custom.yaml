@@ -1,0 +1,74 @@
+patch:
+  schema/name: 雾凇拼音（中國）
+  switches:
+    - name: ascii_mode
+      states:
+        - 中文
+        - 西文
+      abbrev:
+        - 中
+        - Ａ
+      reset: 0
+    - name: ascii_punct
+      states:
+        - 中文標點
+        - 西文標點
+      abbrev:
+        - "，"
+        - ","
+      reset: 0
+    - name: full_shape
+      states:
+        - 半形
+        - 全形
+      abbrev:
+        - 半
+        - 全
+      reset: 0
+    - name: traditionalization
+      states:
+        - 大陸簡體
+        - 香港繁體
+      abbrev:
+        - 簡
+        - 繁
+      reset: 0
+    - name: search_single_char
+      states:
+        - 詞優先
+        - 字優先
+      abbrev:
+        - 詞
+        - 字
+      reset: 0
+    - name: emoji
+      states:
+        - 禁用顏文字
+        - 啟用顏文字
+      abbrev:
+        - ⛔
+        - 😀
+      reset: 1
+  engine/processors/@before 0: lua_processor@*extra-navigator
+  translator/preedit_format/+:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+  traditionalize/+:
+    opencc_config: s2hk.json
+    tips: all
+  speller/algebra/+:
+    - derive/^([zcs])h/$1/
+    - derive/^([zcs])([^h])/$1h$2/
+    - derive/ang$/an/
+    - derive/an$/ang/
+    - derive/eng$/en/
+    - derive/en$/eng/
+    - derive/in$/ing/
+    - derive/ing$/in/
+    - derive/ian$/iang/
+    - derive/iang$/ian/
+    - derive/uan$/uang/
+    - derive/uang$/uan/
+    - derive/un$/uen/
+    - derive/ui$/uei/
+    - derive/iu$/iou/

@@ -1,0 +1,76 @@
+patch:
+  preset_color_schemes/+:
+    win11_dark:
+      name: "Windows 11 Dark"
+      author: yjlin0224
+      color_format: rgba
+      text_color: 0xffffff
+      shadow_color: 0x0000001a
+      label_color: 0xcfcfcf
+      comment_text_color: 0xcfcfcf
+      border_color: 0x00000033
+      back_color: 0x2c2c2c
+      hilited_back_color: 0x383838
+      hilited_shadow_color: 0x00000000
+      hilited_mark_color: 0x4cc2ff
+      hilited_label_color: 0xd2d2d2
+      hilited_comment_text_color: 0xd2d2d2
+      hilited_candidate_border_color: 0x00000000
+      hilited_candidate_back_color: 0x383838
+      hilited_candidate_shadow_color: 0x00000000
+      nextpage_color: 0xffffff
+      prevpage_color: 0xffffff
+    win11_light:
+      name: "Windows 11 Light"
+      author: yjlin0224
+      color_format: rgba
+      text_color: 0x1a1a1a
+      shadow_color: 0x00000008
+      label_color: 0x5f5f5f
+      comment_text_color: 0x5f5f5f
+      border_color: 0x0000000f
+      back_color: 0xf9f9f9
+      hilited_back_color: 0xf0f0f0
+      hilited_shadow_color: 0x00000000
+      hilited_mark_color: 0x0067c0
+      hilited_label_color: 0x5b5b5b
+      hilited_comment_text_color: 0x5b5b5b
+      hilited_candidate_border_color: 0x00000000
+      hilited_candidate_back_color: 0xf0f0f0
+      hilited_candidate_shadow_color: 0x00000000
+      nextpage_color: 0x1a1a1a
+      prevpage_color: 0x1a1a1a
+  style/+:
+    color_scheme: win11_light
+    color_scheme_dark: win11_dark
+    font_face: "Noto Sans CJK TC, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei"
+    label_font_face: "Noto Sans Mono CJK TC"
+    comment_font_face: "Noto Sans CJK TC, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei"
+    font_point: 12
+    label_font_point: 12
+    comment_font_point: 12
+    inline_preedit: true
+    label_format: "%s"
+    horizontal: false
+    candidate_abbreviate_length: 25
+    paging_on_scroll: true
+    layout:
+      baseline: 0
+      linespacing: 0
+      align_type: center
+      max_height: 0
+      max_width: 0
+      min_height: 0
+      min_width: 140
+      border_width: 1
+      margin_x: 8
+      margin_y: 8
+      spacing: 8
+      candidate_spacing: 12
+      hilite_spacing: 8
+      hilite_padding: 4
+      shadow_radius: 8
+      shadow_offset_x: 0
+      shadow_offset_y: 0
+      corner_radius: 8
+      round_corner: 4

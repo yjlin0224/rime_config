@@ -1,0 +1,9 @@
+name: rime_ice_tw
+version: "2024-11-27"
+use_preset_vocabulary: true
+import_tables:
+  - luna_pinyin
+  - cn_dicts/ext
+  - cn_dicts/tencent
+  - cn_dicts/others
+  - cn_dicts/41448

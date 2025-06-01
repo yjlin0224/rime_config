@@ -1,0 +1,10 @@
+patch:
+  speller/algebra:
+    __patch:
+      - pinyin:/zh_z_bufen
+      - pinyin:/hu_f_buhun
+      - pinyin:/eng_ong_bufen
+      - pinyin:/en_eng_bufen
+      - pinyin:/abbreviation
+      - pinyin:/spelling_correction
+      - pinyin:/key_correction
