@@ -18,6 +18,10 @@
 					},
 					{
 						"type": "text",
+						"file": "custom-fix_ganrao.txt"
+					},
+					{
+						"type": "text",
 						"file": "custom-fix_tai.txt"
 					}
 				]
