@@ -3,6 +3,7 @@ version: '2024-11-27'
 use_preset_vocabulary: true
 import_tables:
   - luna_pinyin
+  - bopomofo_symbols
   - cn_dicts/ext
   - cn_dicts/tencent
   - cn_dicts/others

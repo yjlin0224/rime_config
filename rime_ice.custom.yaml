@@ -54,7 +54,8 @@ patch:
   engine/processors/@before 0: lua_processor@*extra-navigator
   engine/filters/+:
     - simplifier@opencc_custom
-    - uniquifier # 加入了 opencc_custom 之後還需要再去一次重複
+    - lua_filter@*extra-separate_comment
+    - uniquifier # 加入上面的新 filter 之後還需要再去除重複一次
     - lua_filter@*extra-unicode_comment
   translator/preedit_format/+:
     - xform/([nl])v/$1ü/
@@ -66,6 +67,9 @@ patch:
   traditionalize/+:
     opencc_config: s2hk.json
     tips: all
+    comment_format:
+      - xform/^/[CC:/
+      - xform/$/]/
   speller/algebra/+:
     - derive/^([zcs])h/$1/
     - derive/^([zcs])([^h])/$1h$2/
@@ -82,3 +86,8 @@ patch:
     - derive/un$/uen/
     - derive/ui$/uei/
     - derive/iu$/iou/
+    # [TODO] 以下規則需要手動在 rime_ice.schema.yaml 中註釋掉，避免影響注音文的輸入
+    # - erase/^hm$/
+    # - erase/^m$/
+    # - erase/^n$/
+    # - erase/^ng$/
