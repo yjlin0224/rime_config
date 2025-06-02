@@ -52,7 +52,9 @@ patch:
     - name: opencc_custom
       reset: 1
   engine/processors/@before 0: lua_processor@*extra-navigator
-  engine/filters/@after last: simplifier@opencc_custom
+  engine/filters/+:
+    - simplifier@opencc_custom
+    - uniquifier # 加入了 opencc_custom 之後還需要再去一次重複
   translator/preedit_format/+:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
