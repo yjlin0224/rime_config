@@ -1,5 +1,5 @@
 name: rime_ice_tw
-version: "2024-11-27"
+version: '2024-11-27'
 use_preset_vocabulary: true
 import_tables:
   - luna_pinyin
@@ -7,3 +7,6 @@ import_tables:
   - cn_dicts/tencent
   - cn_dicts/others
   - cn_dicts/41448
+  - custom_dicts/idolmaster
+  - custom_dicts/lovelive
+  - custom_dicts/umamusume

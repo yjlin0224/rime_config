@@ -1,7 +1,7 @@
 patch:
   preset_color_schemes/+:
     win11_dark:
-      name: "Windows 11 Dark"
+      name: 'Windows 11 Dark'
       author: yjlin0224
       color_format: rgba
       text_color: 0xffffff
@@ -21,7 +21,7 @@ patch:
       nextpage_color: 0xffffff
       prevpage_color: 0xffffff
     win11_light:
-      name: "Windows 11 Light"
+      name: 'Windows 11 Light'
       author: yjlin0224
       color_format: rgba
       text_color: 0x1a1a1a
@@ -43,14 +43,14 @@ patch:
   style/+:
     color_scheme: win11_light
     color_scheme_dark: win11_dark
-    font_face: "Noto Sans CJK TC, LXGW Neo XiHei Plus, TH-Hak, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei"
-    label_font_face: "Noto Sans Mono CJK TC"
-    comment_font_face: "Noto Sans Mono CJK TC, LXGW Neo XiHei Plus, TH-Hak, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei"
+    font_face: 'Noto Sans CJK TC, LXGW Neo XiHei Plus, TH-Hak, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei'
+    label_font_face: 'Noto Sans Mono CJK TC'
+    comment_font_face: 'Noto Sans Mono CJK TC, LXGW Neo XiHei Plus, TH-Hak, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei'
     font_point: 12
     label_font_point: 12
     comment_font_point: 12
     inline_preedit: true
-    label_format: "%s"
+    label_format: '%s'
     horizontal: false
     candidate_abbreviate_length: 25
     paging_on_scroll: true

@@ -14,8 +14,8 @@ patch:
         - 中文標點
         - 西文標點
       abbrev:
-        - "，"
-        - ","
+        - '，'
+        - ','
       reset: 0
     - name: full_shape
       states:
@@ -46,8 +46,8 @@ patch:
         - 禁用顏文字
         - 啟用顏文字
       abbrev:
-        - ⛔
-        - 😀
+        - ❌
+        - ⭕️
       reset: 1
     - name: opencc_custom
       reset: 1
@@ -55,6 +55,7 @@ patch:
   engine/filters/+:
     - simplifier@opencc_custom
     - uniquifier # 加入了 opencc_custom 之後還需要再去一次重複
+    - lua_filter@*extra-unicode_comment
   translator/preedit_format/+:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/

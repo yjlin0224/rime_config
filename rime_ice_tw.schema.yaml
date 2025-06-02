@@ -17,8 +17,8 @@ switches:
       - 中文標點
       - 西文標點
     abbrev:
-      - "，"
-      - ","
+      - '，'
+      - ','
     reset: 0
   - name: full_shape
     states:
@@ -43,8 +43,8 @@ switches:
       - 禁用顏文字
       - 啟用顏文字
     abbrev:
-      - ⛔
-      - 😀
+      - ❌
+      - ⭕️
     reset: 1
   - name: opencc_custom
     reset: 1
