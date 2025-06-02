@@ -49,10 +49,17 @@ patch:
         - ⛔
         - 😀
       reset: 1
+    - name: opencc_custom
+      reset: 1
   engine/processors/@before 0: lua_processor@*extra-navigator
+  engine/filters/@after last: simplifier@opencc_custom
   translator/preedit_format/+:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
+  opencc_custom:
+    option_name: opencc_custom
+    opencc_config: custom.json
+    inherit_comment: false
   traditionalize/+:
     opencc_config: s2hk.json
     tips: all

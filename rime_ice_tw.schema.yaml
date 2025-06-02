@@ -46,6 +46,8 @@ switches:
       - ⛔
       - 😀
     reset: 1
+  - name: opencc_custom
+    reset: 1
 
 __patch:
   - translator/dictionary: rime_ice_tw

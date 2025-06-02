@@ -1,0 +1,27 @@
+{
+	"name": "Custom",
+	"segmentation": {
+		"type": "mmseg",
+		"dict": {
+			"type": "text",
+			"file": "custom.txt"
+		}
+	},
+	"conversion_chain": [
+		{
+			"dict": {
+				"type": "group",
+				"dicts": [
+					{
+						"type": "text",
+						"file": "custom.txt"
+					},
+					{
+						"type": "text",
+						"file": "custom-fix_tai.txt"
+					}
+				]
+			}
+		}
+	]
+}
