@@ -43,9 +43,9 @@ patch:
   style/+:
     color_scheme: win11_light
     color_scheme_dark: win11_dark
-    font_face: 'Noto Sans CJK TC, LXGW Neo XiHei Plus, TH-Hak, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei'
+    font_face: 'Noto Sans CJK TC, LXGW Neo XiHei Plus, TH-Hak, Plangothic P1, Plangothic P2, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei'
     label_font_face: 'Noto Sans Mono CJK TC'
-    comment_font_face: 'Noto Sans Mono CJK TC, LXGW Neo XiHei Plus, TH-Hak, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei'
+    comment_font_face: 'Noto Sans Mono CJK TC, LXGW Neo XiHei Plus, TH-Hak, Plangothic P1, Plangothic P2, Microsoft JhengHei, Microsoft YaHei, MS Gothic, SimHei'
     font_point: 12
     label_font_point: 12
     comment_font_point: 12

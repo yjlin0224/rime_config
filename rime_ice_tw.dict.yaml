@@ -3,11 +3,11 @@ version: '2024-11-27'
 use_preset_vocabulary: true
 import_tables:
   - luna_pinyin
-  - bopomofo_symbols
+  - custom_dicts/zhuyin
+  - custom_dicts/idolmaster
+  - custom_dicts/lovelive
+  - custom_dicts/umamusume
   - cn_dicts/ext
   - cn_dicts/tencent
   - cn_dicts/others
   - cn_dicts/41448
-  - custom_dicts/idolmaster
-  - custom_dicts/lovelive
-  - custom_dicts/umamusume
