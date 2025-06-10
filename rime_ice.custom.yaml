@@ -57,6 +57,7 @@ patch:
     - lua_filter@*extra-separate_comment
     - uniquifier # 加入上面的新 filter 之後還需要再去除重複一次
     - lua_filter@*extra-unicode_comment
+    - lua_filter@*extra-pagination
   translator/preedit_format/+:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
